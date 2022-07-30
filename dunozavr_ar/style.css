@@ -1,0 +1,101 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    background: #983c9d;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-size: 60px 50px;
+    position: relative;
+    top: 150px;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    11.11% { opacity: 1; }
+    33.33% { opacity: 1; }
+    44.44% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#dino { position:relative; width:80px;}
+#dino img { position:absolute; width:80px; left:0; right:0; opacity:0; animation-name: fade; animation-duration: 0.7s; animation-iteration-count: infinite; }
+#dino img:nth-child(1) { animation-delay: 0s; }
+#dino img:nth-child(2) { animation-delay: 0.3s; }
+#dino img:nth-child(3) { animation-delay: 0.6s; }
+
+
+
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url("images/cacti---cacti2.png");
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation:cactusMov 3s infinite linear;
+}
+
+#cactusR {
+    width: 20px;
+    height: 40px;
+    background-image: url("images/cacti---cacti2.png");
+    background-size: 20px 40px;
+    position: relative;
+    top: 70px;
+    left: 700px;
+    animation:cactusRMov 6s infinite linear;
+}
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100%{
+        left: -20%;
+    }
+
+}@keyframes cactusRMov {
+    0% {
+        left: 700px;
+    }
+    100%{
+        left: -40%;
+    }
+}
+
+
+.jump {
+    animation: jamp 0.7s linear;
+}
+
+@keyframes jamp {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+   50% {
+        top: 50px;
+    }
+   80% {
+        top: 130px;
+    }
+
+    100%{
+        top: 150px;
+    }
+}
+
+
+
+
+
+
+
